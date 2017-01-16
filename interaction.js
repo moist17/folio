@@ -4,15 +4,15 @@
 window.addEventListener('load', function(){
 	document.querySelector('.clickIntro').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('.intro').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.space_intro').scrollIntoView({ behavior: 'smooth' });
     });
     document.querySelector('.clickWork').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('.work').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.space_work').scrollIntoView({ behavior: 'smooth' });
     });
     document.querySelector('.clickCode').addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector('.code').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.space_code').scrollIntoView({ behavior: 'smooth' });
     });
 })
 
