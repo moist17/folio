@@ -49,3 +49,19 @@ wiki.addEventListener('click', function(){
     content.innerHTML = '<p>' + 'HTML | CSS | Javascript | Wikipedia API | jQuery Autocomplete Widget' + '<p>' + '<a href="http://codepen.io/dilute/full/pRjEpz/" style="text-decoration: underline">See: Project</a>' + '</p>' + '<p>' + 'Wikipedia Viewer was another not-so-easy challenge. I encountered \"Cross Orgin resource sharing\" difficulties and just couldn\'t\' solve even if googling hundred times. But again, in the end I conquered it and caught data from Wikipedia. To make the web app more functional, I also tried to use Vanilla Javascript to add the autocomplete function into search bar, though I failed, I tried to use jQuery widget and made it.' + '</p>';
     }
 })
+
+function init() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 300,
+            header = document.querySelector("header");
+        if (distanceY > shrinkOn) {
+            classie.add(header,"smaller");
+        } else {
+            if (classie.has(header,"smaller")) {
+                classie.remove(header,"smaller");
+            }
+        }
+    });
+}
+window.onload = init();
