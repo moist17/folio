@@ -1,0 +1,56 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #333;
+	background-color: rgb(234,221,219);
+	margin: 20px;
+
+}
+
+a {
+	text-decoration: underline;
+	color: #333;
+}
+
+a:hover {
+	text-decoration: none;
+	background-color: #21BE73;
+}
+
+a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+p {
+	line-height: 11px;
+}
+
+.headline {
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	color: #21BE73;
+}
+
+#mushroom {
+	font-family: 'Nunito', sans-serif;
+	font-size: 40px;
+}
+
+.bold {
+	font-weight: 500;
+}
+
+.top {
+	margin-top: 34px;
+}
+
+::selection {
+	background: #21BE73;
+	color: rgb(247, 221, 220);
+}
+::-moz-selection {
+	background: #21BE73;
+	color: rgb(247, 221, 220);
+}
